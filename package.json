@@ -1,0 +1,29 @@
+{
+    "devDependencies": {
+        "@symfony/stimulus-bridge": "^1.1.0",
+        "@symfony/webpack-encore": "^0.32.1",
+        "babel-eslint": "^10.1.0",
+        "core-js": "^3.0.0",
+        "eslint": "^7.17.0",
+        "eslint-loader": "^4.0.2",
+        "eslint-plugin-vue": "^7.4.1",
+        "regenerator-runtime": "^0.13.2",
+        "stimulus": "^2.0.0",
+        "vue-loader": "^15.9.6",
+        "vue-template-compiler": "^2.6.12",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    },
+    "dependencies": {
+        "vue": "^2.6.12",
+        "vue-router": "^3.4.9",
+        "vuetify": "^2.4.2"
+    }
+}
