@@ -9,7 +9,17 @@ use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation as Api;
 
 /**
- * @Api\ApiResource()
+ * @Api\ApiResource(
+ *     collectionOperations={
+ *          "get" = { "security" = "is_granted('ROLE_MODULE0_GOD', object)" ,"security_message"="No one is SILVER"},
+ *          "post"
+ *     },
+ *     itemOperations={
+ *          "get" = { "security" = "is_granted('ROLE_MODULE0_VIP', object)" },
+ *          "put",
+ *          "delete"
+ *     },
+ * )
  * @ORM\Entity(repositoryClass=CompanyRepository::class)
  */
 class Company

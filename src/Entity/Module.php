@@ -7,7 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation as Api;
 
 /**
- * @Api\ApiResource()
+ * @Api\ApiResource(
+ *     attributes={"security"="is_granted('ROLE_SUPER_ADMIN')",
+ *     "security_message"="No one can access here, only GOD or Morgan Freeman"},
+ * )
  * @ORM\Entity(repositoryClass=ModuleRepository::class)
  */
 class Module
