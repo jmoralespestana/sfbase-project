@@ -87,10 +87,8 @@ class User implements UserInterface
         $permissions[] = 'ROLE_USER';
 
         foreach ($this->securityGroups as $securityGroup) {
-            $permissions[] = $securityGroup->getPermissions();
+            $permissions = array_merge($permissions,$securityGroup->getPermissions());
         }
-
-        $permissions = array_merge([], $permissions);
 
         return array_unique($permissions);
     }
