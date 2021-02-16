@@ -1,3 +1,15 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+api_graphql_entrypoint:
+    path: /api/graphql
+    controller: api_platform.graphql.action.entrypoint
+
+graphiql:
+    path: /docs/graphiql
+    controller: api_platform.graphql.action.graphiql
+
+authentication_token:
+    path: /authentication_token
+    methods: ['POST']
+
+gesdinet_jwt_refresh_token:
+    path:       /api/refresh_token
+    controller: gesdinet.jwtrefreshtoken::refresh
