@@ -17,7 +17,7 @@ use ApiPlatform\Core\Annotation as Api;
  *     itemOperations={
  *          "get" = { "security" = "is_granted('ROLE_MODULE0_VIP', object)" },
  *          "put",
- *          "delete"
+ *          "delete",
  *     },
  * )
  * @ORM\Entity(repositoryClass=CompanyRepository::class)
