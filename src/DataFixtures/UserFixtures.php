@@ -28,6 +28,8 @@ class UserFixtures extends AppFixtures implements DependentFixtureInterface
             $object->addSecurityGroup($this->getReference('SECURITY_GROUP' . $i));
         }
 
+        $manager->persist($object);
+
         $manager->flush();
     }
 
