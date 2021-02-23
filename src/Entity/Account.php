@@ -40,7 +40,7 @@ class Account
 
     /**
      * @ORM\ManyToOne(targetEntity=Account::class, inversedBy="subAccounts")
-     * @Groups({"read","write"})
+     * @Groups({"read"})
      */
     private $parentAccount;
 
