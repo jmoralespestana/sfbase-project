@@ -43,7 +43,7 @@ class CompanyVoter extends Voter
             return false;
         }
 
-        if ($this->security->isGranted('ROLE_SUPER_ADMIN') || $attribute || in_array($attribute, $user->getRoles())) {
+        if ($this->security->isGranted('ROLE_SUPER_ADMIN') || in_array($attribute, $user->getRoles())) {
             return true;
         }
 

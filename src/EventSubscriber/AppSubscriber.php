@@ -19,7 +19,7 @@ class AppSubscriber implements EventSubscriber
     {
         return [
             Events::prePersist,
-            //Events::preUpdate,
+            Events::preUpdate,
         ];
     }
 
